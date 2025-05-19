@@ -1,0 +1,40 @@
+.stats-section {
+  position: relative;
+  background: #043974;
+  color: white;
+  padding: 3rem 2rem;
+  overflow: hidden;
+}
+
+.stats-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  z-index: 0;
+}
+
+.stats-background img {
+  height: 100%;
+  opacity: 0.2;
+}
+
+.stats-content {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+}
+
+.stat {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.stat span {
+  display: block;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
