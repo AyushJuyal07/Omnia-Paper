@@ -3,9 +3,10 @@ import Navbar from '../components/navbar/Navbar';
 import Hero from '../components/hero/Hero';
 import Clients from '../components/clients/Clients';
 import Stats from '../components/stats/Stats';
-// import Features from '../components/Features/Features';
-// import Services from '../components/Services/Services';
-// import Footer from '../components/Footer/Footer';
+import Features from '../components/features/Features';
+import Services from '../components/services/Services';
+// import Results from '../components/results/Results'
+// import Footer from '../components/footer/Footer';
 
 const Home = () => {
   return (
@@ -14,8 +15,9 @@ const Home = () => {
       <Hero />
       <Clients />
       <Stats />
-      {/* <Features /> */}
-      {/* <Services /> */}
+      <Features />
+      <Services />
+      {/* <Results /> */}
       {/* <Footer /> */}
     </>
   );
