@@ -1,6 +1,6 @@
 .hero {
   height: 90vh;
-  background: url('../../assets/hero-bg.png') no-repeat center center;
+  background: url('../../assets/hero-bg2.jpg') no-repeat center center;
   background-size: cover;
   color: white;
   display: flex;
@@ -10,12 +10,25 @@
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
   padding: 2rem;
   text-align: center;
+  visibility: hidden;
+}
+
+.split-word {
+  will-change: transform, opacity;
 }
 
 .hero h1 {
   font-size: 4rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  line-height: 1.2;
+  white-space: normal !important;
+  display: inline-block;
+}
+
+/* Add this for Solution 2 */
+.hero h1 .line {
+  display: block;
 }
 
 .hero p {
