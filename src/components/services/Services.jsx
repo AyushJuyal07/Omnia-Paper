@@ -11,6 +11,8 @@ const Services = () => {
         <p align="justify">
           We provide expert consultation to help you choose the right paper while ensuring seamless ordering and dedicated support. Enjoy exclusive discounts on bulk and regular purchases, along with smart inventory management through staggered delivery and OWS. For urgent needs, our emergency order service keeps your operations running smoothly.
         </p>
+
+        
         <button className="btn-primary">Try Omnia</button>
       </div>
       <div className="services-img">

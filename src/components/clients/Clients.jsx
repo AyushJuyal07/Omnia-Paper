@@ -1,7 +1,7 @@
 
 import React from 'react';
 import './Clients.css';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/clients/logo.png';
 
 
 const Clients = () => {

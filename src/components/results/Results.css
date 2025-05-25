@@ -1,85 +1,77 @@
+/* === FILE: src/components/ProvenResults/ProvenResults.css === */
+
 .proven-results {
-  background-color: #033472;
-  color: white;
-  padding: 4rem 2rem;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
+  background-color: #003366; /* Replace with wave background if you have it */
+  color: white;
+  padding: 4rem;
   flex-wrap: wrap;
+  gap: 2rem;
+  position: relative;
 }
 
-.results-left {
+.text-section {
   flex: 1;
   min-width: 300px;
-  margin-right: 2rem;
+  /* margin-right: 10rem; */
 }
 
-.results-left h2 {
-  
-  font-size: 3rem;
-  font-weight: 700;
+.text-section h2 {
+  font-family: 'League Gothic', sans-serif;
+  font-size: 4rem;
+  letter-spacing: 3px;
   margin-bottom: 1rem;
 }
 
-.results-left p {
+.text-section p {
   font-size: 1rem;
-  color: #cfd9e0;
+  color: #cbd5e1;
 }
 
-.results-right {
+.stats-grid {
   flex: 2;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem 3rem;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 2rem;
   min-width: 300px;
+  margin-left: 8rem;
 }
 
-.result-box {
+.stat-item {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
+  gap: 0.5rem;
 }
 
-.result-box .icon {
-  font-size: 1.8rem;
-  margin-bottom: 0.3rem;
+.stat-item .icon {
+  font-size: 2rem;
+  color: white;
+  flex-shrink: 0;
 }
 
-.result-box .stat {
-  font-size: 1.5rem;
-  font-weight: 700;
+.stat-item p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.4;
 }
 
-.result-box .label {
-  font-size: 0.95rem;
-  color: #cfd9e0;
+.stat-item strong {
+  font-size: 1.2rem;
+  display: block;
 }
 
-/* Responsive layout */
-@media (max-width: 900px) {
+
+
+
+@media (max-width: 768px) {
   .proven-results {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding: 2rem;
   }
 
-  .results-left {
-    margin-right: 0;
-    margin-bottom: 2rem;
-  }
-
-  .results-right {
+  .stats-grid {
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-  }
-
-  .result-box {
-    align-items: center;
-  }
-}
-
-@media (max-width: 500px) {
-  .results-right {
-    grid-template-columns: 1fr;
   }
 }

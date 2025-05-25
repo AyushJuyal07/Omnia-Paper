@@ -6,13 +6,7 @@ import { FaChevronDown, FaArrowRight } from 'react-icons/fa';
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo-section">
         <img src={mainLogo} alt="Omnia Papers" className="main-logo" />
-        {/* <div className="brand-text">
-          <h1>Omnia Papers</h1>
-          <p>The Gateway to Limitless Trust and Reliability</p>
-        </div> */}
-      </div>
       <div className="nav-actions">
         <ul className="nav-links">
           <li><strong>Home</strong></li>

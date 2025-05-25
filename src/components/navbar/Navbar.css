@@ -5,13 +5,9 @@
   padding: 1rem 2rem;
   background-color: #efefef;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
-.logo-section {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-}
 
 .main-logo {
   height: 48px;
