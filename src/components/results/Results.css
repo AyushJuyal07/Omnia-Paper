@@ -1,62 +1,97 @@
 .proven-results {
   background-color: #033472;
   color: white;
-  padding: 4rem 2rem;
+  padding: 6rem 8%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
+  position: relative;
+  overflow: hidden;
+}
+
+.wave-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
 
 .results-left {
   flex: 1;
   min-width: 300px;
-  margin-right: 2rem;
+  max-width: 500px;
+  position: relative;
+  z-index: 1;
 }
 
 .results-left h2 {
-  
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
+  font-size: 3.6rem;
+  font-weight: 800;
+  margin-bottom: 1.2rem;
+  line-height: 1.2;
 }
 
 .results-left p {
-  font-size: 1rem;
-  color: #cfd9e0;
+  font-size: 1.1rem;
+  color: #d4e1ee;
 }
 
 .results-right {
   flex: 2;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem 3rem;
+  gap: 2.5rem 4rem;
   min-width: 300px;
+  position: relative;
+  z-index: 1;
 }
 
 .result-box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  gap: 0.5rem;
 }
 
 .result-box .icon {
-  font-size: 1.8rem;
-  margin-bottom: 0.3rem;
+  font-size: 2.2rem;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 0.8rem;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .result-box .stat {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
+  color: #ffffff;
 }
 
 .result-box .label {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #cfd9e0;
+  line-height: 1.4;
+  max-width: 250px;
 }
 
 /* Responsive layout */
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
+  .results-left h2 {
+    font-size: 3rem;
+  }
+
+  .results-right {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
   .proven-results {
     flex-direction: column;
     align-items: center;
@@ -64,8 +99,8 @@
   }
 
   .results-left {
-    margin-right: 0;
     margin-bottom: 2rem;
+    text-align: center;
   }
 
   .results-right {
@@ -78,8 +113,16 @@
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   .results-right {
     grid-template-columns: 1fr;
+  }
+
+  .results-left h2 {
+    font-size: 2.4rem;
+  }
+
+  .result-box .stat {
+    font-size: 1.5rem;
   }
 }

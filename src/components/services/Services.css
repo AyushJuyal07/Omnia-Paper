@@ -4,68 +4,101 @@
   align-items: center;
   justify-content: space-between;
   gap: 3rem;
-  padding: 4rem;
+  padding: 4rem 6%;
   background-color: #033472;
   color: #fff;
   flex-wrap: wrap;
-  /* border-radius: 10px; */
   position: relative;
   overflow: hidden;
+  border-radius: 0; /* Optional: Make it 12px for rounded layout */
 }
+
 .services::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  /* background-image: url('../../assets/servicess.jpg'); */
   background-repeat: no-repeat;
-  background-position: left;
-  background-size: contain;
-  opacity: 0.2;
+  background-position: left center;
+  background-size: cover;
+  opacity: 0.05;
   z-index: 0;
+  pointer-events: none;
 }
+
 .services-text {
   flex: 1;
+  min-width: 300px;
   max-width: 600px;
   position: relative;
   z-index: 1;
 }
+
 .services-text h2 {
   font-family: 'League Gothic', sans-serif;
-  font-size: 4rem;
-  letter-spacing: 3px;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  color: #ffffff;
 }
+
 .services-text p {
-  font-size: 1rem;
-  margin: 1rem 0 2rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
 }
+
 .services-img {
   flex: 1;
+  min-width: 300px;
   max-width: 480px;
   position: relative;
   z-index: 1;
 }
+
 .services-img img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 16px;
   object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
-.btn-primary{
-    border-radius: 10px;
-    /* border: 1px solid #9EC8FB; */
-    /* background: #4F9CF9; */
-    /* background-image: linear-gradient(to right, #81baa0, #46a39c); */
-    /* box-shadow: 0px 4px 69.3px 0px rgba(0, 0, 0, 0.10); */
-    /* /* display: flex; */
-    padding: 1rem ;
-    /* justify-content: center;
-    align-items: center;  */
-
-
+.btn-primary {
+  border-radius: 8px;
+  padding: 0.8rem 1.6rem;
+  font-size: 1rem;
+  font-weight: 500;
   color: white;
   background-image: linear-gradient(to right, #81baa0, #46a39c);
   border: none;
   cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(130, 180, 160, 0.4);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .services {
+    flex-direction: column;
+    padding: 3rem 5%;
+  }
+
+  .services-text h2 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .services-text p {
+    text-align: center;
+  }
+
+  .btn-primary {
+    display: block;
+    margin: 0 auto;
+  }
 }

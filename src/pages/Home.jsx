@@ -5,8 +5,9 @@ import Clients from '../components/clients/Clients';
 import Stats from '../components/stats/Stats';
 import Features from '../components/features/Features';
 import Services from '../components/services/Services';
-// import Results from '../components/results/Results'
-// import Footer from '../components/footer/Footer';
+import Results from '../components/results/Results';
+import ProductGrid from '../components/products/ProductGrid';
+import Footer from '../components/footer/Footer';
 
 const Home = () => {
   return (
@@ -17,8 +18,9 @@ const Home = () => {
       <Stats />
       <Features />
       <Services />
-      {/* <Results /> */}
-      {/* <Footer /> */}
+      <Results />
+      <ProductGrid /> 
+      <Footer />
     </>
   );
 };
