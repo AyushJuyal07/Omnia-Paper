@@ -246,7 +246,7 @@
 
         .submit-button {
           width: 100%;
-          background-color: #3b82f6;
+          background: linear-gradient(to right, #d87c26, #E89141);
           color: white;
           font-weight: 500;
           padding: 12px 24px;
@@ -262,7 +262,9 @@
         }
 
         .submit-button:hover {
-          background-color: #2563eb;
+          background: white;
+          color: black;
+          border: 1px solid #E89141;
         }
 
         .submit-icon {

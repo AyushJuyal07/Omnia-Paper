@@ -124,7 +124,7 @@ const NikeCarousel = () => {
         
         <div className="carousel-indicators">
           <div className="indicator-number">
-            {String(active + 1).padStart(2, '0')}
+            {/* {String(active + 1).padStart(2, '0')} */}
           </div>
           <ul className="indicator-dots">
             {slides.map((_, index) => (

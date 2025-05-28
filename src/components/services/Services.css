@@ -52,20 +52,20 @@
   object-fit: cover;
 }
 
-.btn-primary{
-    border-radius: 10px;
-    /* border: 1px solid #9EC8FB; */
-    /* background: #4F9CF9; */
-    /* background-image: linear-gradient(to right, #81baa0, #46a39c); */
-    /* box-shadow: 0px 4px 69.3px 0px rgba(0, 0, 0, 0.10); */
-    /* /* display: flex; */
-    padding: 1rem ;
-    /* justify-content: center;
-    align-items: center;  */
-
-
+.button-primary{
+  font-size: 1rem;
+  border-radius: 8px;
+  padding: 12px 24px;
   color: white;
-  background-image: linear-gradient(to right, #81baa0, #46a39c);
+  background-image: linear-gradient(to right, #d87c26, #E89141);
   border: none;
   cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.button-primary:hover {
+    background: white;
+    color: black;
+    border: 1px solid #E89141;
 }

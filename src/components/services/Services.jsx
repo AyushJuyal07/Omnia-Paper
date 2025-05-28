@@ -13,7 +13,7 @@ const Services = () => {
         </p>
 
         
-        <button className="btn-primary">Try Omnia</button>
+        <button className="button-primary">Try Omnia</button>
       </div>
       <div className="services-img">
         <img src={servicess}  alt="Image of Paper Roll" className="placeholder-img" />

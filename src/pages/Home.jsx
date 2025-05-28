@@ -8,6 +8,7 @@ import Services from '../components/services/Services';
 import Results from '../components/results/Results'
 import Products from '../components/products/Products'
 import Footer from '../components/footer/Footer';
+import Reach from '../components/reach/Reach';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <Stats />
       <Features />
       <Services />
+      <Reach />
       <Results />
       <Products />
       <Footer />
