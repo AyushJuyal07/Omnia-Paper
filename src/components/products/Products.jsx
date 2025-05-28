@@ -21,7 +21,7 @@ const Products = () => {
   return (
     <section className="industries-section">
       <div className="industries-header">
-        <h2>Powering Industries,<br />Delivering Excellence</h2>
+        <h2>Powering Industries, Delivering Excellence</h2>
         <p>Industries We Serve</p>
       </div>
       <div className="industries-grid">

@@ -30,7 +30,7 @@
 import React from 'react';
 import './GlobalReach.css';
 import AnimatedMap from './AnimatedMap'; // Import the animated map component
-
+// import GlobeMap from './GlobeMap';
 const GlobalReach = () => {
   return (
     <section className="global-reach">

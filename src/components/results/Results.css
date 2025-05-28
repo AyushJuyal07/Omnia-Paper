@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #003366; /* Replace with wave background if you have it */
+  background: #043974; /* Replace with wave background if you have it */
   color: white;
   padding: 4rem;
   flex-wrap: wrap;

@@ -141,7 +141,7 @@
   font-family: 'League Gothic', sans-serif;
   text-transform: uppercase;
   color: white;
-  background-image: linear-gradient(to right, #81baa0, #46a39c);
+  background: linear-gradient(to right, #d87c26, #E89141);
   border: none;
   cursor: pointer;
 }
@@ -153,9 +153,31 @@
   color: white;
   border: 2px solid transparent;
   background: linear-gradient(#242745, #242745) padding-box,
-              linear-gradient(to right, #81baa0, #46a39c) border-box;
+              linear-gradient(to right, #d87c26, #E89141);
   cursor: pointer;
 }
+
+
+/* .connect-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  background: linear-gradient(to right, #d87c26, #E89141);
+  color: white;
+  border: none;
+
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.connect-btn:hover {
+
+  background: white;
+  color: black;
+  border: 1px solid #E89141;
+} */
 
 .carousel-list::after {
   content: '';
